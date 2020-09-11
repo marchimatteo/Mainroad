@@ -1,4 +1,4 @@
-{{- $translations := .Site.Home.AllTranslations }}
+{{- $translations := .Page.AllTranslations }}
 {{- if and .Site.IsMultiLingual (gt (len $translations) 0) }}
 <div class="widget-languages widget">
 	<h4 class="widget__title">{{ T "languages_title" }}</h4>
